@@ -152,14 +152,15 @@ def analysis():
     all_lyric_str = read_all_lyric()
     tags = jieba.analyse.extract_tags(all_lyric_str, topK=50, withWeight=True)
     tf = dict((tag[0], tag[1]) for tag in tags)
-    logger.debug("tags", tags)
+    logger.debug("tags:%s", tags)
     wordcloud = WordCloud(font_path="SimHei.ttf").generate_from_frequencies(tf)
     plt.imshow(wordcloud)
     plt.axis("off")
     plt.show()
 
 
-def main(singer):
+def main():
+    singer = "赵雷"
     # 爬取歌词
     crawl(singer)
     # 分析歌词
@@ -167,5 +168,4 @@ def main(singer):
 
 
 if __name__ == '__main__':
-    singer = "赵雷"
-    main(singer=singer)
+    main()
