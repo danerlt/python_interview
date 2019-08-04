@@ -1,2 +1,7 @@
-# python_interview
-python_interview
+# python笔试题
+
+## 以下3题任意完成两题
+
+- 赵雷的歌里都写了些啥?
+- nba球星喜欢在哪些位置出手？
+- 央视诗词大赛飞花令实现？
