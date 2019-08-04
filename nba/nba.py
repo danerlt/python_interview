@@ -143,8 +143,8 @@ def analysis(player_id):
 
 
 def main():
-    player_id = '201939'
-    crawl(player_id)
+    player_id = '201935'
+    # crawl(player_id)
     print("crawl player_id:%s success" % player_id)
     made_shot, missed_shot = analysis(player_id)
     print("analysis player_id:%s success" % player_id)
